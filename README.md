@@ -1,23 +1,20 @@
-# XDSTools4
+# XDSTools5
 
-## Steps
-* Compile NIST xdstools4 from source
-* Configure xdstools4 with eHealth Suisse Metadata
-* Build & run xdstools4 instance in Docker
+[XDSTools5](https://github.com/usnistgov/iheos-toolkit2/releases) from NIST in a docker instance
 
-## Compile NIST xdstools4 from source
-```sh
+## Compile NIST xdstools5 from source
+```
 git clone https://github.com/usnistgov/iheos-toolkit2.git
+(or git pull origin master if already downloaded)
 cd iheos-toolkit2
 mvn clean install
 ```
+Then, copy `iheos-toolkit2/xdstools2/target/xdstools2-*.war` to this folder as `xdstools5.war`.
 
-Then, copy `iheos-toolkit2/xdstools2/target/xdstools2-*.war` to this folder as `xdstools4.war`.
+## Configure xdstools with Swiss Metadata
+TODO (see gazelle instance)
 
-## Configure xdstools4 with eHealth Suisse Metadata
-TODO
-
-## Build & run xdstools4 instance in Docker
+## Build & run xdstools5 instance in Docker
 
 Build the Docker image:
 ```sh
@@ -34,4 +31,4 @@ With this setup, xdstool4's external cache will be saved in the `cache` director
 sudo chown -R $USER:$(id -gn) cache/
 ```
 
-Then, xdstools4 can be accessed in the browser: http://localhost:8080/xdstools4/
+Then, xdstools5 can be accessed in the browser: http://localhost:8080/xdstools5/
