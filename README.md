@@ -1,17 +1,17 @@
-# XDSTools5
+# NIST XDS Toolkit in a docker container
 
-[XDSTools5](https://github.com/usnistgov/iheos-toolkit2/releases) from NIST in a docker instance
+[NIST](https://www.nist.gov/) supports the [IHE](https://www.ihe.net/) effort in Document Sharing as part of the IT Infrastructure Domain with [testing, tools, and technical](https://ihexds.nist.gov/). Here are just instructions to use the NIST [XDS Toolkit](https://github.com/usnistgov/iheos-toolkit2/releases) in a [docker](https://www.docker.com/) container.
 
-# Run NIST xdstools from github with latset release from github
+# Run XDS Toolkit with release 5.2.3 from github
 
 If you have bash you can directly run docker (thanks [@ericpoiseau](https://twitter.com/ericpoiseau) for the script) with the version 5.2.3 from github
 (maybe first chmod +x ./run-xdstools.bash):
 ```
 ./run-xdstools.bash
 ```
-Then, xdstools5 can be accessed in the browser: http://localhost:8080/xdstools5/
+XDS Toolkit can be accessed in the browser: http://localhost:8080/xdstools5/
 
-## Compile NIST xdstools5 from source
+## Build XDS Toolkit from source
 ```
 git clone https://github.com/usnistgov/iheos-toolkit2.git
 (or git pull origin master if already downloaded)
@@ -26,9 +26,9 @@ Note: In iheos-toolkit2/tk-deps/src/main/Release.properties the path to the exte
 Then, copy `iheos-toolkit2/xdstools2/target/xdstools2-*.war` to this folder as `xdstools5.war`.
 
 
-## Build & run xdstools5 instance in Docker
+## Build & run XDS Toolkit in a docker container
 
-Build the Docker image:
+Build the docker image:
 ```sh
 docker build -t xdstools .
 
