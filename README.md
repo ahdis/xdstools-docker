@@ -2,14 +2,14 @@
 
 [NIST](https://www.nist.gov/) supports the [IHE](https://www.ihe.net/) effort in Document Sharing as part of the IT Infrastructure Domain with [testing, tools, and technical](https://ihexds.nist.gov/). Here are just instructions to use the NIST [XDS Toolkit](https://github.com/usnistgov/iheos-toolkit2/releases) in a [docker](https://www.docker.com/) container.
 
-# Run XDS Toolkit with release 5.2.3 from github
+# Run XDS Toolkit with release 6.0.1 from github
 
 If you have bash you can directly run docker (thanks [@ericpoiseau](https://twitter.com/ericpoiseau) for the script) with the version 5.2.3 from github
 (maybe first chmod +x ./run-xdstools.bash):
 ```
 ./run-xdstools.bash
 ```
-XDS Toolkit can be accessed in the browser: http://localhost:8080/xdstools5/
+XDS Toolkit can be accessed in the browser: http://localhost:8080/xdstools6/
 
 ## Build XDS Toolkit from source
 ```
@@ -23,7 +23,7 @@ follow the steps as described on the [iheos-toolkit2 help for gazelle_nexus](htt
 
 Note: In iheos-toolkit2/tk-deps/src/main/Release.properties the path to the external cache and the port properties are set. Currently the path is fixed to /your/external/cache/location 
 
-Then, copy `iheos-toolkit2/xdstools2/target/xdstools2-*.war` to this folder as `xdstools5.war`.
+Then, copy `iheos-toolkit2/xdstools2/target/xdstools2-*.war` to this folder as `xdstools6.war`.
 
 
 ## Build & run XDS Toolkit in a docker container
