@@ -13,7 +13,7 @@ RUN mkdir /your/external/cache
 RUN mkdir /your/external/cache/location 
 
 COPY ./server.xml /usr/local/tomcat/conf/
-COPY ./xdstools5.war /usr/local/tomcat/webapps/
+COPY ./xdstools6.war /usr/local/tomcat/webapps/
 
 EXPOSE 8080 8888 8443
 # CMD ["catalina.sh", "run"]
