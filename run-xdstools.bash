@@ -29,10 +29,10 @@ function cecho {
   fi
 }
 
-FILE=xdstools5.war
+FILE=xdstools6.war
 if [ ! -f $FILE ]; then
     cecho -blue "Downloading war file from github"
-    wget https://github.com/usnistgov/iheos-toolkit2/releases/download/v6.2.0/xdstools6.2.0.war -O xdstools6.war
+    wget https://github.com/usnistgov/iheos-toolkit2/releases/download/v6.3.4/xdstools6.2.0.war -O xdstools6.war
     else
     cecho -blue "war file already available, using existing instance"
 fi
