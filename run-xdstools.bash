@@ -29,15 +29,12 @@ function cecho {
   fi
 }
 
-FILE=xdstools6.war
-if [ ! -f $FILE ]; then
-    cecho -blue "Downloading war file from github"
-    wget https://github.com/usnistgov/iheos-toolkit2/releases/download/v6.3.4/xdstools6.2.0.war -O xdstools6.war
-    else
-    cecho -blue "war file already available, using existing instance"
-fi
-cecho -blue "Building the docker file"
-docker build -t xdstools .
+githubreleaselabel="$(wget --max-redirect=0 https://github.com/usnistgov/iheos-toolkit2/releases/latest 2>&1 | egrep 'Location:' | cut -b 69-73)"
+
+cecho -blue "Building the docker file for xdstools version" 
+cecho -blue $githubreleaselabel
+
+docker build -t xdstools --build-arg githubreleaselabel=$githubreleaselabel .
 cecho -blue "Starting docker"
 docker run -d --name xdstools -p 8080:8080 xdstools
 

@@ -4,12 +4,12 @@
 
 # Run XDS Toolkit with release 6.3.4 from github
 
-If you have bash you can directly run docker (thanks [@ericpoiseau](https://twitter.com/ericpoiseau) for the script) with the version 6.3.4 from github
+If you have bash you can directly run xdstools with the latest release version from github
 (maybe first chmod +x ./run-xdstools.bash):
 ```
 ./run-xdstools.bash
 ```
-XDS Toolkit can be accessed in the browser: http://localhost:8080/xdstools6/
+XDS Toolkit can then be accessed in the browser: http://localhost:8080/xdstools6/
 
 ## Build XDS Toolkit from source
 ```
