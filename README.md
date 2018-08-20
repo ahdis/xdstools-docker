@@ -2,7 +2,7 @@
 
 [NIST](https://www.nist.gov/) supports the [IHE](https://www.ihe.net/) effort in Document Sharing as part of the IT Infrastructure Domain with [testing, tools, and technical](https://ihexds.nist.gov/). Here are just instructions to use the NIST [XDS Toolkit](https://github.com/usnistgov/iheos-toolkit2/releases) in a [docker](https://www.docker.com/) container.
 
-# Run XDS Toolkit with release 6.3.4 from github
+# Run XDS Toolkit with latest release from github
 
 If you have bash you can directly run xdstools with the latest release version from github
 (maybe first chmod +x ./run-xdstools.bash):
